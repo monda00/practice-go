@@ -5,6 +5,12 @@ import "fmt"
 var x int = 10
 
 // x int := 10
+var (
+	n int
+	a string = "Hello"
+	b        = 10
+	c int    = 20
+)
 
 func main() {
 	fmt.Println(x)
@@ -37,4 +43,11 @@ func main() {
 		"cat",
 	}
 	fmt.Println(tom)
+
+	fmt.Println(n, a, b, c)
+
+	m := 100
+	fmt.Println(m)
+	m, l := 200, 300
+	fmt.Println(m, l)
 }
